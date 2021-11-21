@@ -1,43 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
   <head>
-    <title>Stories and Legends (PAGE title)</title>
+    <title>EDA Blog, Gracie</title>
     <meta charset="UTF-8" />
-    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <header class="body">
+    <div class="navigationBar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Technical</button>
+            <div class="dropdown-content">
+              <li><a href="technical.html">Inline vs. Block</a></li>
+            </div>
+          </div>
+          <li><a href="identity-values.html">Identity</a></li>
+          <li><a href="learning-plan.html">Learning</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
+  <body class="main-page" class="container">
+    <h1>CSS Layout - display inline vs inline blocks</h1>
     <h2>
-      E kore e mau i a koe, he wae kai pakiaka.
-      <em
-        >A foot accustomed to running over roots makes the speediest runner.</em
+      W3 Schools and Stack Overflow are your friends, I have them to thank for
+      the content in my
+      <a
+        href="https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block"
+        >Blog</a
       >
-      (Optional SUB title)
+      post today.
     </h2>
-    <h3>10 November 2010</h3>
+    <h3>22 November 2021</h3>
+    <p>
+      Credit for the diagram to
+      <a href="https://twitter.com/b0rk/status/1284528767151611904"
+        >Julia Evans @Bork</a
+      >
+    </p>
+    <img
+      src="/images/inline vs block.jpeg"
+      alt="diagram of the business rules for inline vs. block css rules."
+    />
+    <container class="container">
+      <p>Inline elements:</p>
+      <ol>
+        <li>
+          It respects left & right margins and padding, but <b>not</b> top &
+          bottom,
+        </li>
+        <li>it cannot have a width and height set,</li>
+        <li>and allow other elements to sit to their left and right;</li>
+        <li>
+          but, see very important side notes on this
+          <a
+            href="https://hacks.mozilla.org/2015/03/understanding-inline-box-model/"
+            >here</a
+          >
+          where Morzilla discuss box in-line elements.
+        </li>
+      </ol>
 
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on
-      his peoples enemies. One morning his mother wanted kumara for the hangi
-      (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short
-      distance away. He agreed to fetch the kumara and told his mother to
-      prepare the hangi.
-    </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as
-      he wanted to annoy some Te Rarawa people who lived there. Carrying two
-      large baskets for the kumara, he ran like the wind, completing the journey
-      over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few
-      hours it takes a good hangi to heat up properly. On reaching Ahipara, he
-      went straight to the people's kumara pataka (storehouse for the sweet
-      potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted
-      stealing the kai (food). He was immediately recognised.
-    </p>
-
-    <!-- this is a comment. -->
+      <p>Block elements:</p>
+      <ol>
+        <li>it respects all of those.</li>
+        <li>force a line break after the block element.</li>
+        <li>acquires full-width if width not defined</li>
+      </ol>
+      <p>Inline-block elements:</p>
+      <ol>
+        <li>Allow other elements to sit to their left and right,</li>
+        <li>plus they, respect top & bottom margins and padding;</li>
+        <li>and also they respect height and width.</li>
+      </ol></container
+    >
+    <container class="container">
+      <p>
+        <a href="https://www.w3schools.com/cssref/pr_class_display.asp"
+          >W3 Schools</a
+        >
+        says:
+      </p>
+      <ul>
+        <li>
+          An inline element has no line break before or after it, and it
+          tolerates HTML elements next to it.
+        </li>
+        <li>
+          A block element has some whitespace above and below it and does not
+          tolerate any HTML elements next to it.
+        </li>
+        <li>
+          An inline-block element is placed as an inline element (on the same
+          line as adjacent content), but it behaves as a block element.
+        </li>
+      </ul>
+    </container>
   </body>
 </html>
