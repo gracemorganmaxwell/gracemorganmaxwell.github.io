@@ -109,3 +109,10 @@ border-color: black;
     margin: 2rem;
     padding: 0.5rem;
 }
+
+h3{
+    padding:0.5rem;
+}
+p {
+    padding: 0.25rem;
+}
