@@ -10,7 +10,7 @@
     background-image: url(../images/flower.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     padding: 1rem;
     margin: 2rem;
 
