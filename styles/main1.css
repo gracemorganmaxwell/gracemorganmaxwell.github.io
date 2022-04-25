@@ -1,0 +1,259 @@
+/* Google Fonts link-in */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* default reset for the whole page, setup the fonts preferences */
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background-color: #091e05ff;
+}
+header {
+  background-color: #41292cff;
+  padding: 1.875rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #f7fff7ff;
+  border-radius: 0.625rem;
+}
+.wrapper {
+  max-width: 75rem;
+  min-width: 31rem;
+  margin: 0rem auto;
+}
+/* navbar styling */
+.navbar {
+  max-width: 70rem;
+  position: fixed;
+  padding: 1.875rem 0rem;
+  font-family: 'Ubuntu', 'sans-serif';
+  transition: all 0.3s ease;
+}
+/* .sticky is a JS class */
+.navbar.sticky {
+  padding: 0.9375rem 0rem;
+  background: #fcba03;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* profile image */
+header img {
+  margin-left: 1rem;
+  object-fit: scale-down;
+  max-width: 9.375rem;
+  max-height: 9.375rem;
+  border-radius: 75% 0.25rem;
+  border: #091e05 0.5rem solid;
+}
+/* .logo = "gracie's folio" in header, scrolling navbar */
+.navbar .logo a {
+  color: #f7fff7;
+  font-size: 2.95rem;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color: #091e05;
+}
+/* .sticky is a JS class */
+.navbar.sticky .logo a span {
+  color: #004f2d;
+  transition: color 0.3s ease;
+}
+.navbar .menu li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display:inline-block;
+  flex-grow: inherit;
+}
+.navbar .menu li a {
+  color: #f7fff7;
+  padding: 0.75rem;
+  font-size: 1.12rem;
+  font-weight: 500;
+  margin-left: 1.56rem;
+  transition: color 0.3s ease;
+}
+.sprintNavbarItem {
+  text-decoration: none;
+  font-display: none;
+  color: #091e05;
+}
+.navbar .sprintNavbar li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
+  flex-grow: inherit;
+}
+.navbar .max-width .menu .sprintNavbar {
+  color: #091e05;
+}
+.navbar.sticky .menu li a:hover {
+  background-color: #091e05;
+  border-radius: 50%;
+}
+/* menu btn styling */
+.menu-btn {
+  color: #f7fff7;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+}
+/* home section styling */
+.home {
+  display: flex;
+  background-color: #004f2d;
+  height: 100vh;
+  color: #091e05;
+  min-height: 31.25rem;
+  font-family: 'Ubuntu', 'sans-serif';
+}
+.home .max-width {
+  margin: auto 0rem auto 2.5rem;
+}
+.home .home-content .text-1 {
+  font-size: 1.48rem;
+  font-weight: 600;
+  margin-left: -0.11rem;
+}
+.home .home-content .text-2 {
+  font-size: 3.5rem;
+}
+.home .home-content .text-3 {
+  font-size: 2rem;
+  margin: 0.31rem 0;
+}
+.home .home-content .text-3 span {
+  color: #fcba03;
+  font-weight: 500;
+}
+/* about - introduction area - set context for the project */
+.inside_right_box {
+  padding: 0.625rem;
+  text-align: center;
+  background-color: #f7fff7ff;
+  border-radius: 0.625rem;
+  margin: 0rem 0.625rem;
+}
+section {
+  display: block;
+  color: #091e05ff;
+  background-color: #fcba03ff;
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  margin-top: 0.625rem;
+}
+/* body content */
+article {
+  margin-top: 0.625rem;
+  background-color: #004f2dff;
+  text-align: center;
+  font-size: 0.938rem;
+  color: #f7fff7ff;
+  border-radius: 0.625rem;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 1%;
+}
+.inside_article {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7fff7ff;
+  border-radius: 0.625rem;
+  margin: 1.25rem 0.938rem 0.625rem 0.938rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 5rem;
+}
+.article_title {
+  color: #091e05ff;
+  transform: rotate(270deg);
+  display: block;
+  position: absolute;
+  left: 0.938rem;
+  top: calc(50% - 2.031rem);
+  width: 65px;
+  text-align: center;
+}
+.article_item {
+  display: inline-block;
+  color: #091e05ff;
+  border: dashed;
+  background-color: #e3e4e0;
+  border-color: #004f2dff;
+  border-width: 0.19rem;
+  border-radius: 0.625rem;
+  width: 27%;
+  margin: 0.625rem;
+}
+.article_item a {
+  padding: 0.313rem;
+  display: block;
+  height: 100%;
+}
+.article_item a,
+.article_item a h4 {
+  text-decoration: none;
+}
+.article_item a:hover h4 {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.article_item img {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.img_frame {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.item_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* footer */
+footer {
+  background-color: #41292cff;
+  text-align: center;
+  font-size: 15px;
+  color: #f7fff7ff;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1% 1% 0.5% 0;
+  width: 100%;
+  padding-bottom: 1%;
+}
+/* the Dev Academy & GitHub icons in the footer */
+footer img {
+  object-fit: scale-down;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 30%;
+  margin-left: 2%;
+  background-color: #f7fff7ff;
+}
+/* responsive media queries */
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
