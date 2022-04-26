@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="en">
   <head>
-    <title>EDA Blog, Gracie</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <!-- Head -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Gracie's Blog</title>
+    <link rel="icon" type="image/x-icon" href="/images/faviconYellowHeart.ico" />
   </head>
-  <header class="body">
-    <div class="navigationBar">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <div class="dropdown">
-            <button class="dropbtn">Technical</button>
-            <div class="dropdown-content">
-              <li><a href="technical.html">Inline vs. Block</a></li>
+  <!-- Body -->
+  <body class="wrapper">
+    <div class="max-width">
+      <!-- Header -->
+      <header>
+        <!-- NavBar Space -->
+        <nav class="navbar">
+          <div class="max-width">
+            <aside>
+              <img src="/images/me2.jpeg" alt="photograph of my face smiling" />
+            </aside>
+            <div class="logo">
+              <!-- NavBar: Logo / Main Header -->
+              <a href="/index.html">gracie's Web<span>log</span></a>
+            </div>
             </div>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Core</button>
-            <div class="dropdown-content">
-              <li><a href="identity-values.html">Identity</a></li>
-              <li><a href="learning-plan.html">Learning</a></li>
+        </nav>
+        <section class="home" id="home">
+          <div class="max-width">
+            <div class="home-content">
+              <div class="text-1">Hello, my name is</div>
+              <div class="text-2">Grace Morgan-Maxwell</div>
+              <div class="text-3">
+                And I am a <span>Web Developer in training.</span>
+              </div>
             </div>
           </div>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <body class="main-page" class="container">
+        </section>
+      </header>
+      <script src="/script.js"></script>
+  <body class="blogBody">
+    <div class="blogContainer">
     <h1>CSS Layout - display inline vs inline blocks</h1>
     <h2>
       W3 Schools and Stack Overflow are your friends, I have them to thank for
@@ -45,18 +54,19 @@
       >
       post today.
     </h2>
-    <h3>22 November 2021</h3>
+    <h3>April, 2022</h3>
     <p>
       Credit for the diagram to
       <a href="https://twitter.com/b0rk/status/1284528767151611904"
         >Julia Evans @Bork</a
       >
     </p>
+    <div class="inlineBlockImg">
     <img
       src="/images/inline vs block.jpeg"
       alt="diagram of the business rules for inline vs. block css rules."
-    />
-    <container class="container">
+    /></div>
+    <container>
       <p>Inline elements:</p>
       <ol>
         <li>
@@ -88,7 +98,7 @@
         <li>and also they respect height and width.</li>
       </ol></container
     >
-    <container class="container">
+    <container>
       <p>
         <a href="https://www.w3schools.com/cssref/pr_class_display.asp"
           >W3 Schools</a
@@ -109,6 +119,15 @@
           line as adjacent content), but it behaves as a block element.
         </li>
       </ul>
-    </container>
+    </container></div>
+    <footer>
+        <h4>Powered by:</h4>
+        <a href="https://github.com/gracemorganmaxwell" target="_blank"
+          ><img alt="Link to my GitHub account" src="/images/gitHub.png"
+        /></a>
+        <a href="https://devacademy.co.nz/" target="_blank">
+          <img alt="GitHub Link" src="/images/EDA-square-logo-uai-258x258.png"
+        /></a>
+      </footer>
   </body>
 </html>

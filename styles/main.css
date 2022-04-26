@@ -10,15 +10,17 @@
   font-family: 'Ubuntu', sans-serif;
 }
 body {
-  background-color: #091e05ff;
+  background-color: #000814ff;
 }
 header {
-  background-color: #41292cff;
+  background-color:  #001d3dff;
   padding: 1.875rem;
   text-align: center;
+  font: 'Poppins', sans-serif;
   font-size: 1.25rem;
   color: #f7fff7ff;
   border-radius: 0.625rem;
+  max-height: 70rem;
 }
 .wrapper {
   max-width: 75rem;
@@ -27,7 +29,10 @@ header {
 }
 /* navbar styling */
 .navbar {
+  border: solid  rgba(255, 196, 0, 0.474) 0.2rem;
+  border-radius: 5%;
   max-width: 70rem;
+  width: 100%;
   position: fixed;
   padding: 1.875rem 0rem;
   font-family: 'Ubuntu', 'sans-serif';
@@ -36,7 +41,7 @@ header {
 /* .sticky is a JS class */
 .navbar.sticky {
   padding: 0.9375rem 0rem;
-  background: #fcba03;
+  background:  #ffc300ff;
 }
 .navbar .max-width {
   display: flex;
@@ -63,7 +68,7 @@ header img {
 }
 /* .sticky is a JS class */
 .navbar.sticky .logo a span {
-  color: #004f2d;
+  color: #003566ff;;
   transition: color 0.3s ease;
 }
 .navbar .menu li {
@@ -88,15 +93,6 @@ header img {
   font-display: none;
   color: #091e05;
 }
-.navbar .sprintNavbar li {
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  display: inline-block;
-  flex-grow: inherit;
-}
 .navbar .max-width .menu .sprintNavbar {
   color: #091e05;
 }
@@ -104,28 +100,21 @@ header img {
   background-color: #091e05;
   border-radius: 50%;
 }
-/* menu btn styling */
-.menu-btn {
-  color: #f7fff7;
-  font-size: 1.4rem;
-  cursor: pointer;
-  display: none;
-}
 /* home section styling */
 .home {
   display: flex;
-  background-color: #004f2d;
+  background-color: #003566ff;;
   height: 100vh;
-  color: #091e05;
   min-height: 31.25rem;
   font-family: 'Ubuntu', 'sans-serif';
+  color: #000814ff;
 }
 .home .max-width {
   margin: auto 0rem auto 2.5rem;
 }
 .home .home-content .text-1 {
   font-size: 1.48rem;
-  font-weight: 600;
+  font-weight: 800;
   margin-left: -0.11rem;
 }
 .home .home-content .text-2 {
@@ -136,7 +125,7 @@ header img {
   margin: 0.31rem 0;
 }
 .home .home-content .text-3 span {
-  color: #fcba03;
+  color: #ffd60aff;
   font-weight: 500;
 }
 /* about - introduction area - set context for the project */
@@ -149,14 +138,14 @@ header img {
 }
 section {
   display: block;
-  color: #091e05ff;
-  background-color: #fcba03ff;
+  color: #000814ff;
+  background-color: #ffc300ff;
   width: 100%;
   padding: 1.25rem;
   border-radius: 0.625rem;
   margin-top: 0.625rem;
 }
-/* body content */
+/* body content HOME-Page */
 article {
   margin-top: 0.625rem;
   background-color: #004f2dff;
@@ -185,16 +174,16 @@ article {
   display: block;
   position: absolute;
   left: 0.938rem;
-  top: calc(50% - 2.031rem);
+  top: calc(60% - 2.031rem);
   width: 65px;
   text-align: center;
 }
 .article_item {
   display: inline-block;
   color: #091e05ff;
-  border: dashed;
+  border-style: solid;
   background-color: #e3e4e0;
-  border-color: #004f2dff;
+  border-color: #ffd60aff;
   border-width: 0.19rem;
   border-radius: 0.625rem;
   width: 27%;
@@ -230,9 +219,44 @@ article {
   justify-content: center;
   width: 100%;
 }
+/* Blog Post-PAGE Body */ 
+.blogBody {
+ background-color: #ffc300ff;
+ margin: 5rem;
+ padding: 5rem;
+}
+.blogContainer {
+  border-radius: 1.5%;
+  border: 2rem #ffc300ff solid;
+  background-color: #f7fff7ff;
+  padding: 5rem;
+  margin: 5rem;
+}
+.blogTitle {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.blogSubTitle {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+h3 {
+  text-align: center;
+  font-style: italic;
+}
+p {
+  padding: 0.5rem;
+  text-align: center; 
+}
+.inlineBlockImg{
+  border: #091e05 0.5rem solid;
+  max-height: 75rem;
+  max-width: 75rem;
+  object-fit: scale-down, fill;
+}
 /* footer */
 footer {
-  background-color: #41292cff;
+  background-color:  #001d3dff;
   text-align: center;
   font-size: 15px;
   color: #f7fff7ff;
@@ -241,15 +265,20 @@ footer {
   margin: 1% 1% 0.5% 0;
   width: 100%;
   padding-bottom: 1%;
+  padding: 1rem;
 }
 /* the Dev Academy & GitHub icons in the footer */
 footer img {
+  padding-top: 1rem;
   object-fit: scale-down;
   width: 5rem;
   height: 5rem;
   border-radius: 30%;
   margin-left: 2%;
   background-color: #f7fff7ff;
+}
+h4 {
+  padding: 0.5rem;
 }
 /* responsive media queries */
 @media only screen and (max-width: 600px) {
