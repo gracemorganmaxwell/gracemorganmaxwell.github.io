@@ -254,6 +254,18 @@ p {
   max-width: 75rem;
   object-fit: scale-down, fill;
 }
+h3 {
+  text-align: left;
+  padding-top: 1rem;
+}
+.routine {
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  text-align: left;
+  border: #001d3dff 0.5rem solid;
+}
 /* footer */
 footer {
   background-color:  #001d3dff;
