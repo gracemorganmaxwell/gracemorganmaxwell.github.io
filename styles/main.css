@@ -209,17 +209,17 @@ article {
   display: block;
   border-radius: 10px;
 }
-.img_frame {
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
 .item_wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 /* Blog Post-PAGE Body */ 
+.img_frame {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .blogBody {
  background-color: #ffc300ff;
  margin: 5rem;
@@ -247,12 +247,6 @@ h3 {
 p {
   padding: 0.5rem;
   text-align: center; 
-}
-.inlineBlockImg{
-  border: #091e05 0.5rem solid;
-  max-height: 75rem;
-  max-width: 75rem;
-  object-fit: scale-down, fill;
 }
 h3 {
   text-align: left;
