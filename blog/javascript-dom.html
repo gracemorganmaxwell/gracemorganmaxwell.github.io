@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Head -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Gracie's Blog</title>
+    <link rel="icon" type="image/x-icon" href="images/faviconYellowHeart.ico" />
+  </head>
+  <!-- Body -->
+  <body class="wrapper">
+    <div class="max-width">
+      <!-- Header -->
+      <header>
+        <!-- NavBar Space -->
+        <nav class="navbar">
+          <div class="max-width">
+            <aside>
+              <img src="/images/me2.jpeg" alt="photograph of my face smiling" />
+            </aside>
+            <div class="logo">
+              <!-- NavBar: Logo / Main Header -->
+              <a href="/index.html">gracie's Web<span>log</span></a>
+            </div>
+          </div>
+        </nav>
+        <section class="home" id="home">
+          <div class="max-width">
+            <div class="home-content">
+              <div class="text-1">Hello, my name is</div>
+              <div class="text-2">Grace Morgan-Maxwell</div>
+              <div class="text-3">
+                And I am a <span>Web Developer in training.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <script src="/script.js"></script>
+      <body class="blogBody">
+        <div class="blogContainer">
+          <h1 class="blogTitle">Javascript Fundamentals</h1>
+          <h2 class="blogSubTitle">Sprint 3, May 2022</h2>
+          <h3>
+            <em
+              >Basically HTML, CSS and Javascript are the three fundamentals</em
+            >
+            that allow interactive websites found all over the world wide web to
+            exist, to be created and changed on-going. For context I am running
+            through what is HTML, CSS and <em>JavaScript.</em>
+          </h3>
+          <h3>
+            HTML, stands for hypertext markup language and it is the building
+            block for the internet.
+          </h3>
+          <p>
+            Webpages from websites based all over the world wide web (www) use
+            HTML syntax to create structure for their content. A webpages actual
+            content would likely contain text and images, maybe video or audio
+            files, it would likely link to other webpages from the same website
+            or perhaps an external site or two. HTML syntax gives us the ability
+            to build a framework for a webpage and structure our sites content
+            in a way which is user friendly for the target audience of the
+            webpage or project.
+          </p>
+          <p>
+            Imagine a house, 3 bedrooms home with a family bathroom and two
+            stories. That is the HTML of the building. But at this stage it's a
+            blueprint on the desk of a project manager, a plan for a structure
+            with content inbetween.
+          </p>
+          <h3>
+            <em>
+              HTML is enhanced and modified by other technologies, one of them
+              is <b>CSS, which stands for cascading styles sheets.</b>
+            </em>
+          </h3>
+          <p>
+            CSS is used to control the aesthetic, the formatting and layout of
+            webpages. CSS describes how the HTML elements, the framework and the
+            content (text, images etc) should be presented on the webpage.
+          </p>
+          <p>
+            Fast forward 6 months to now, that house blueprint has come to life
+            and the house is built. Made of red bricks with a solid wood
+            front-door, which can be seen from the street. Inside each room of
+            the family home there is a coorindiating collection of
+            attributes(rules for how it should look). The attributes modify the
+            HTML framework and the content it contains (ie. carpetted floors,
+            wooden stairs and painted walls, drapes framming the windows). As a
+            consequence of the hardwork done by HTML + CSS the user is left
+            feeling like they are at home.
+          </p>
+
+          <h3>
+            <em>
+              The other technology that commonly modifies HTML is
+              <b>JS or Javascript</b>
+            </em>
+            in fact 97% of websites on the web use JavaScript according to
+            Wikipedia.
+          </h3>
+          <p>
+            JavaScript, is an object orientated programming language, unlike the
+            HTML and CSS which although important, aren't powerful. JS
+            determines the dynamic and interactive elements on the page and
+            brings life to a page, from static to dynamic and responsive. JS
+            determines what happens when users click, hover or type within
+            certain elements, makes them interactive. This is kind of like the
+            functionality of the building.
+          </p>
+          <p>
+            Back to the house, you know the layout, structure and what it looks
+            like, the aesthetic. But what can you do within the house? You can
+            eat… sleep… open doors... turn the tap on/off... make meals… plug
+            the tv in and watch Netflix... anything that you do at home, really!
+            That is the JavaScript of the building. It brings the capability and
+            function of the home alive for the user.
+          </p>
+          <h3>
+            <em> What is <b>Control Flow?</b> </em>
+          </h3>
+          <p>
+            By default JS code is executed from top to bottom, line by line
+            however we can change this Control Flow. This allows our program to
+            make decisions about what code is executed and when. Control flow is
+            all about the order in which our code is run. We are able to control
+            the flow of our code and either execut or loop over certain sections
+            of code depending if a given condition is true or false. This gives
+            our program the ability to change based on conditions and
+            intelligently automate repeative tasks.
+          </p>
+          <h3>Consider the diagram below:</h3>
+          <img src="controlFlowEx.png" alt="control flow example diagram" />
+          <p>
+            Is this diagram we show how depending on the input or choice made by
+            a user will then result in different possible outcomes for the user.
+            In this case will they end out getting takeout or not? By using
+            conditional statements in JS that can achieve a different outcome
+            for the user.
+          </p>
+          <h3>Conditional Statements:</h3>
+          <p>
+            Conditional statements are basically checks to see if a certain
+            consition is either truw or false. If the consition is true then run
+            code A, if it's false then run code B.
+          </p>
+          <h3>What are Loops?</h3>
+          <p>
+            Loops, are a conditional statement that allow us to perform
+            repetitive tasks with less code. For example using loops we can
+            iterate over an array and perform some sort of action on each piece
+            of data in the array, or we can use a loop to compile a list of all
+            the items.
+          </p>
+          <img
+            src="/images/jsForLoopFlowchart.png"
+            alt="JavaScript for loop flowchart"
+          />
+          <p>
+            There are a variety of Loop statement, such as 'for' loop,
+            'do/while' loop, 'for..in' loop and finally 'for..of' loop.
+          </p>
+          <h3><em>What is the DOM? The DOM stands for the Document Object Model.</h3>
+          <p>
+            The DOM lives mostly behind the scenes and is made up of a tree of objects 
+            called “nodes”, as you can see here:
+          </p>
+          <img src="images/DOM.png" alt="diagram of the DOM">
+          <p></p>
+          <p>
+            How to interact with the DOM.. Usually in your browser directly via
+            the Dev Tools for Chrome for example or via code being hosted live
+            to a set URL on a server, by or using the Live Share option in an
+            IDE like Visual Studio.
+          </p>
+        </div>
+      </body>
+    </div>
+  </body>
+</html>
