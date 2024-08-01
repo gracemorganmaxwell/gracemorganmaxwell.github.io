@@ -12,7 +12,7 @@
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Hamburgerbtn from './Hamburgerbtn'
+import Hamburgerbtn from './HamburgerBtn'
 
 const meta: Meta<typeof Hamburgerbtn> = {
   component: Hamburgerbtn,

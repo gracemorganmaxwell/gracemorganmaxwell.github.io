@@ -12,15 +12,15 @@
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import NavigationComp from './NavigationComp'
+import LineSeperatorComponent from './LineSeparatorComponent'
 
-const meta: Meta<typeof NavigationComp> = {
-  component: NavigationComp,
+const meta: Meta<typeof LineSeperatorComponent> = {
+  component: LineSeperatorComponent,
   tags: ['autodocs'],
 }
 
 export default meta
 
-type Story = StoryObj<typeof NavigationComp>
+type Story = StoryObj<typeof LineSeperatorComponent>
 
 export const Primary: Story = {}

@@ -12,15 +12,15 @@
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import FooterComp from './FooterComp'
+import PopupMessageComponent from './PopupMessageComponent'
 
-const meta: Meta<typeof FooterComp> = {
-  component: FooterComp,
+const meta: Meta<typeof PopupMessageComponent> = {
+  component: PopupMessageComponent,
   tags: ['autodocs'],
 }
 
 export default meta
 
-type Story = StoryObj<typeof FooterComp>
+type Story = StoryObj<typeof PopupMessageComponent>
 
 export const Primary: Story = {}

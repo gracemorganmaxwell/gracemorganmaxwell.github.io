@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import NavigationComp from './NavigationComp'
+import LineSeperatorComponent from './LineSeparatorComponent'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
 
-describe('NavigationComp', () => {
+describe('LineSeperatorComponent', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<NavigationComp />)
+      render(<LineSeperatorComponent />)
     }).not.toThrow()
   })
 })

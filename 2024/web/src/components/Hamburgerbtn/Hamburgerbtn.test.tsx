@@ -1,6 +1,6 @@
 import { render } from '@redwoodjs/testing/web'
 
-import Hamburgerbtn from './Hamburgerbtn'
+import Hamburgerbtn from './HamburgerBtn'
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
