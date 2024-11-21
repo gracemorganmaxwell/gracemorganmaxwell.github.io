@@ -1,0 +1,19 @@
+/* Error: Undefined variable.
+ *    ,
+ * 34 |     @include button-styles($secondary-color, #fff);
+ *    |                            ^^^^^^^^^^^^^^^^
+ *    '
+ *   sass/partials/_mixins.scss 34:25  @forward
+ *   sass/partials/index.scss 4:1      @use
+ *   sass/styles.scss 5:1              root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 34 \2502      @include button-styles($secondary-color, #fff);\a    \2502                             ^^^^^^^^^^^^^^^^\a    \2575 \a   sass/partials/_mixins.scss 34:25  @forward\a   sass/partials/index.scss 4:1      @use\a   sass/styles.scss 5:1              root stylesheet";
+}

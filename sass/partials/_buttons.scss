@@ -1,0 +1,64 @@
+// _buttons.scss
+
+.btn {
+	border-width: 2px;
+	border-style: outset;
+	border-color: buttonface;
+	border-right-color: $border-dark;
+	border-bottom-color: $border-dark;
+	background: $btn-bg;
+	color: black;
+	padding: 0 0 4px;
+	border-radius: 1px;
+	box-shadow: 1px 1px #000;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		border: 2px inset #fff;
+		background: $btn-hover-bg;
+		color: $border-dark;
+		box-shadow: -1px -1px #000;
+	}
+
+	&:focus {
+		border: 2px inset #fff !important;
+		background: $btn-hover-bg;
+		color: $border-dark;
+		box-shadow: -1px -1px #000 !important;
+		outline: 0 !important;
+		background: url(background.bmp);
+	}
+
+	&:active {
+		border: 2px inset #fff !important;
+		color: $border-dark;
+		box-shadow: -1px -1px #000 !important;
+		outline: 0 !important;
+		background: url(background.bmp);
+	}
+}
+
+.btn-primary {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+button:focus {
+	outline: 1px dotted;
+}
+
+.btn.disabled,
+.btn:disabled {
+	cursor: default;
+	background-color: silver;
+	border-style: outset;
+	border-color: buttonface;
+	border-right-color: $border-dark;
+	border-bottom-color: $border-dark;
+	color: grey;
+	text-shadow: 1px 1px #fff;
+}
+
+.minimized {
+	display: none;
+}

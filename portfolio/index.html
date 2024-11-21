@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Gracie's 💛 Digital Creations</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta author="Gracie Morgan-Maxwell" />
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../assets/icons/computer-3.png" type="image/png" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+				rel="stylesheet"
+				integrity="sha384-..."
+				crossorigin="anonymous"
+		/>
+
+		<!-- Custom Styles -->
+		<link rel="stylesheet" href="../css/style.min.css" />
+	</head>
+
+	<body class="desktop bg-cloud windows-scrollbar">
+		<!-- Start Menu -->
+		<div class="start-menu" id="start-menu">
+			<div class="start-menu-item" data-window="projects-window">Projects</div>
+			<div class="start-menu-item" data-window="journal-window">Reflective Learning Journal</div>
+			<div class="start-menu-item" data-window="contact-window">Contact</div>
+			<div class="start-menu-item" data-window="about-window">About Me</div>
+		</div>
+
+		<!-- Desktop Icons -->
+		<div class="desktop-icons">
+			<div class="desktop-icon" data-window="projects-window">
+				<img src="../assets/icons/project-icon.png" alt="Projects Icon" />
+				<span>Projects</span>
+			</div>
+			<div class="desktop-icon" data-window="journal-window">
+				<img src="../assets/icons/journal-icon.png" alt="Journal Icon" />
+				<span>Reflective Learning Journal</span>
+			</div>
+			<div class="desktop-icon" data-window="contact-window">
+				<img src="../assets/icons/contact-icon.png" alt="Contact Icon" />
+				<span>Contact</span>
+			</div>
+			<div class="desktop-icon" data-window="about-window">
+				<img src="../assets/icons/about-icon.png" alt="About Me Icon" />
+				<span>About Me</span>
+			</div>
+		</div>
+
+		<!-- Taskbar -->
+		<footer class="taskbar">
+			<button class="start-button" id="start-button">
+				<img src="../assets/icons/start-icon.png" alt="Start Icon" class="icon-16 me-2" />
+				Start
+			</button>
+			<div class="time" id="taskbar-time">12:00 PM</div>
+		</footer>
+
+		<!-- Project Window -->
+		<div class="win95-window card w95" id="projects-window">
+			<div class="window-title-bar card-header">
+				<span class="window-title">
+					<img src="../assets/icons/project-icon.png" alt="Project Icon" class="window-icon icon-16" />
+					Projects
+				</span>
+				<div class="window-controls">
+					<button class="window-button minimize-button">_</button>
+					<button class="window-button close-button">&times;</button>
+				</div>
+			</div>
+			<div class="window-content card-body">
+				<h5 class="card-title">Projects</h5>
+				<p class="card-text">Details about your projects go here.</p>
+				<!-- Add more project details as needed -->
+			</div>
+		</div>
+
+		<!-- Reflective Learning Journal Window -->
+		<div class="win95-window card w95" id="journal-window">
+			<div class="window-title-bar card-header">
+				<span class="window-title">
+					<img src="../assets/icons/journal-icon.png" alt="Journal Icon" class="window-icon icon-16" />
+					Reflective Learning Journal
+				</span>
+				<div class="window-controls">
+					<button class="window-button minimize-button">_</button>
+					<button class="window-button close-button">&times;</button>
+				</div>
+			</div>
+			<div class="window-content card-body">
+				<h5 class="card-title">Reflective Learning Journal</h5>
+				<p class="card-text">Your journal entries and reflections.</p>
+				<!-- Add more journal content as needed -->
+			</div>
+		</div>
+
+		<!-- Contact Window -->
+		<div class="win95-window card w95" id="contact-window">
+			<div class="window-title-bar card-header">
+				<span class="window-title">
+					<img src="../assets/icons/contact-icon.png" alt="Contact Icon" class="window-icon icon-16" />
+					Contact
+				</span>
+				<div class="window-controls">
+					<button class="window-button minimize-button">_</button>
+					<button class="window-button close-button">&times;</button>
+				</div>
+			</div>
+			<div class="window-content card-body">
+				<h5 class="card-title">Contact Me</h5>
+				<form id="contact-form" novalidate>
+					<div class="mb-3">
+						<label for="name" class="form-label">Name</label>
+						<input
+							type="text"
+							class="form-control"
+							id="name"
+							name="name"
+							required
+						/>
+						<div class="invalid-feedback">Please enter your name.</div>
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Email</label>
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+							name="email"
+							required
+						/>
+						<div class="invalid-feedback">
+							Please enter a valid email address.
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="message" class="form-label">Message</label>
+						<textarea
+							class="form-control"
+							id="message"
+							name="message"
+							rows="5"
+							required
+						></textarea>
+						<div class="invalid-feedback">Please enter your message.</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Send Message</button>
+					<div id="form-success" class="mt-3 text-success" style="display: none;">
+						Your message has been sent successfully!
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- About Me Window -->
+		<div class="win95-window card w95" id="about-window">
+			<div class="window-title-bar card-header">
+				<span class="window-title">
+					<img src="../assets/icons/about-icon.png" alt="About Icon" class="window-icon icon-16" />
+					About Me
+				</span>
+				<div class="window-controls">
+					<button class="window-button minimize-button">_</button>
+					<button class="window-button close-button">&times;</button>
+				</div>
+			</div>
+			<div class="window-content card-body">
+				<h5 class="card-title">About Me</h5>
+				<p class="card-text">
+					Information about yourself goes here.
+				</p>
+				<!-- Add more about me content as needed -->
+			</div>
+		</div>
+
+		<!-- Include Your Main JavaScript -->
+		<script src="../js/scripts.js"></script>
+		<!-- Include Bootstrap JS and dependencies (optional, if used) -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

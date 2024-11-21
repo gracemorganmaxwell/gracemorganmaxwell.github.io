@@ -1,0 +1,24 @@
+.taskbar {
+	@include taskbar;
+}
+
+.start-button {
+	display: flex;
+	align-items: center;
+	background-color: #C0C0C0;
+	border: 1px outset #fff;
+	padding: 5px 10px;
+	margin-right: 10px;
+	box-shadow: 1px 1px #000;
+	cursor: pointer;
+	font-size: 14px;
+
+	&:hover {
+		background-color: #a5cef7;
+	}
+}
+
+.taskbar .time {
+	margin-left: auto;
+	font-size: 14px;
+}
