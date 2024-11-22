@@ -2,17 +2,17 @@
 @use 'partials/index' as *;
 
 body {
-	font-family: index.$font-family;
-	background-color: index.$bg-color;
-	color: index.$text-color;
+	font-family: $font-family;
+	background-color: $bg-color;
+	color: $text-color;
 }
 
 .button-secondary {
-	@include index.button-styles(#6c757d, #ffffff); 
+	@include button-styles($background: #6c757d, $textColor: #ffffff); 
 }
 
 .container {
-	@include button-styles();
+	@include button-styles($background: $bg-color, $textColor: $text-color);
 }
 
 
