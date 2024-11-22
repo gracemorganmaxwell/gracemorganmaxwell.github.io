@@ -1,138 +1,14 @@
 // sass/styles.scss
+@use 'partials' as p;
 
-@use "partials/index" as index;
-
-// Custom Styles
 body {
-	font-family: index.$body-font;
-	background-color: index.$bg-color;
-	color: index.$text-color;
-	overflow: hidden; // Prevent scrollbars for desktop-like interface
+	font-family: p.$font-family;
+	background-color: p.$bg-color;
+	color: p.$text-color;
 }
 
-header {
-	padding: 60px 0;
-	text-align: center;
-	background-color: lighten(index.$bg-color, 10%);
-	border-bottom: 2px solid index.$primary-color;
-
-	h1 {
-		font-size: 2.5rem;
-		color: index.$primary-color;
-	}
+.button-secondary {
+	@include p.button-styles(#6c757d, #ffffff); // Example secondary button
 }
 
-section {
-	padding: 60px 0;
 
-	&.fade-in {
-		opacity: 0;
-		transform: translateY(20px);
-		transition: opacity 1s ease-out, transform 1s ease-out;
-
-		&.visible {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-}
-
-// Desktop
-.desktop {
-	@include index.desktop;
-}
-
-// Start Menu
-.start-menu {
-	display: none;
-	position: absolute;
-	bottom: 50px; // Above the taskbar
-	left: 10px; // Align with start button
-	background-color: silver;
-	border: 2px outset #fff;
-	padding: 10px;
-	box-shadow: 2px 2px 0 #000;
-	width: 200px;
-	z-index: 999;
-}
-
-.start-menu-item {
-	padding: 5px 10px;
-	color: #212529;
-	cursor: pointer;
-	white-space: nowrap;
-
-	&:hover {
-		background-color: #a5cef7;
-	}
-}
-
-// Windows
-.win95-window {
-	@include index.draggable-window;
-	width: 400px;
-	top: 100px;
-	left: 100px;
-	z-index: 1000;
-
-	.window-title-bar {
-		background-color: index.$window-title-bar-bg;
-		color: index.$window-title-color;
-		padding: 5px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		cursor: move;
-		border-bottom: 2px solid #808080;
-	}
-
-	.window-title {
-		display: flex;
-		align-items: center;
-
-		.window-icon {
-			width: 16px;
-			height: 16px;
-			margin-right: 5px;
-			vertical-align: middle;
-		}
-	}
-
-	.window-controls {
-		display: flex;
-
-		.window-button {
-			background-color: #c0c0c0;
-			border: 1px inset buttonface;
-			margin-left: 2px;
-			width: 20px;
-			height: 20px;
-			font-size: 14px;
-			line-height: 14px;
-			text-align: center;
-			cursor: pointer;
-
-			&:hover {
-				background-color: #808080;
-				color: white;
-			}
-
-			&:active {
-				border-style: inset;
-			}
-		}
-	}
-
-	.window-content {
-		padding: 10px;
-		background-color: white;
-		color: #212529;
-		height: calc(100% - 30px); // Adjust based on title bar height
-		overflow: auto;
-	}
-}
-
-// Minimized Windows
-.minimized {
-	display: none;
-}

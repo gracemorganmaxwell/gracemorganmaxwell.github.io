@@ -3,23 +3,17 @@
 
 @use "variables" as vars;
 
-@mixin button-styles($bg-color, $text-color) {
-	background-color: $bg-color;
-	color: $text-color;
+@mixin button-styles($background, $textColor) {
+	background-color: $background;
+	color: $textColor;
 	padding: 10px 20px;
-	border: 2px outset vars.$border-light;
-	border-radius: 2px;
-	font-family: vars.$font-family;
-	font-size: vars.$font-size;
-	transition: background-color vars.$transition-speed;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 
 	&:hover {
-		background-color: darken($bg-color, 10%);
-		cursor: pointer;
-	}
-
-	&:active {
-		border-style: inset;
+		background-color: darken($background, 10%);
 	}
 }
 
@@ -34,7 +28,7 @@
 // _animations.scss
 @keyframes fadeIn {
 	from {
-		opacity: 0;
+			opacity: 0;
 	}
 	to {
 		opacity: 1;

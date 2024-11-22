@@ -1,5 +1,10 @@
+@use 'variables' as vars;
+@use 'mixins' as m;
+
 .taskbar {
-	@include taskbar;
+	@include m.flex-center();
+	background-color: vars.$taskbar-bg;
+	color: vars.$taskbar-color;
 }
 
 .start-button {

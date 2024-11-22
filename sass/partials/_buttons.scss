@@ -1,12 +1,11 @@
 // Media queries and button styling
 // _buttons.scss
 
-@use "variables" as vars;
-
-@include button-styles(vars.$btn-bg, vars.$btn-text-color);
+@use 'variables' as vars;
+@use 'mixins' as m;
 
 .btn {
-	@include button-styles(vars.$btn-bg, vars.$btn-text-color);
+	@include m.button-styles(vars.$btn-bg, vars.$btn-text-color);
 	background: url("icons/button-background.png");
 
 	&:hover {
@@ -30,12 +29,16 @@ button:focus {
 	background-color: silver;
 	border-style: outset;
 	border-color: buttonface;
-	border-right-color: $border-dark;
-	border-bottom-color: $border-dark;
+	border-right-color: vars.$border-dark;
+	border-bottom-color: vars.$border-dark;
 	color: grey;
 	text-shadow: 1px 1px #fff;
 }
 
 .minimized {
 	display: none;
+}
+
+.button-primary {
+	@include m.button-styles(vars.$btn-bg, vars.$btn-text-color);
 }

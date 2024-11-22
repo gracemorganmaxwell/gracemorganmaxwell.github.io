@@ -1,14 +1,17 @@
+@use 'variables' as vars;
+@use 'mixins' as m;
+
 .navbar-95 {
-	background: silver;
+	background: vars.$navbar-gradient;
 	margin: 0;
-	border: 1px outset #fff;
+	border: 1px outset vars.$footer-text;
 	min-height: 40px;
 	padding: 0 6px;
-	color: #212529;
+	color: vars.$text-color;
 }
 
 .navbar-brand {
-	color: #212529;
+	color: vars.$text-color;
 	padding: 0 6px;
 }
 
@@ -16,7 +19,7 @@
 	text-decoration: none;
 	display: inline-block;
 	padding: 0 9px;
-	color: #212529;
+	color: vars.$text-color;
 }
 
 .dropdown-menu {
@@ -42,12 +45,12 @@
 
 .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
 	width: 32px;
-	background: url("icons/directory_closed_cool-5.png"); // Added quotes
+	background: url("icons/directory_closed_cool-5.png") no-repeat;
 }
 
 .navbar-light .navbar-toggler .navbar-toggler-icon {
 	width: 32px;
-	background: url("icons/directory_open_cool-5.png"); // Added quotes
+	background: url("icons/directory_open_cool-5.png") no-repeat;
 }
 
 .navbar-toggler {
