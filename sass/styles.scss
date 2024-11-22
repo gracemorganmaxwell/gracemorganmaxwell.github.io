@@ -1,24 +1,24 @@
 // sass/styles.scss
 
-@use "partials/index";
+@use "partials/index" as index;
 
 // Custom Styles
 body {
-	font-family: index.variables.$body-font;
-	background-color: index.variables.$bg-color;
-	color: index.variables.$text-color;
+	font-family: index.$body-font;
+	background-color: index.$bg-color;
+	color: index.$text-color;
 	overflow: hidden; // Prevent scrollbars for desktop-like interface
 }
 
 header {
 	padding: 60px 0;
 	text-align: center;
-	background-color: lighten(index.variables.$bg-color, 10%);
-	border-bottom: 2px solid index.variables.$primary-color;
+	background-color: lighten(index.$bg-color, 10%);
+	border-bottom: 2px solid index.$primary-color;
 
 	h1 {
 		font-size: 2.5rem;
-		color: index.variables.$primary-color;
+		color: index.$primary-color;
 	}
 }
 
@@ -76,8 +76,8 @@ section {
 	z-index: 1000;
 
 	.window-title-bar {
-		background-color: index.variables.$window-title-bar-bg;
-		color: index.variables.$window-title-color;
+		background-color: index.$window-title-bar-bg;
+		color: index.$window-title-color;
 		padding: 5px;
 		display: flex;
 		justify-content: space-between;
@@ -102,7 +102,7 @@ section {
 		display: flex;
 
 		.window-button {
-			background-color: #C0C0C0;
+			background-color: #c0c0c0;
 			border: 1px inset buttonface;
 			margin-left: 2px;
 			width: 20px;
@@ -116,10 +116,10 @@ section {
 				background-color: #808080;
 				color: white;
 			}
-		}
 
-		.window-button:active {
-			border-style: inset;
+			&:active {
+				border-style: inset;
+			}
 		}
 	}
 
@@ -136,4 +136,3 @@ section {
 .minimized {
 	display: none;
 }
-

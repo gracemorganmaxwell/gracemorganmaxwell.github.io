@@ -1,11 +1,6 @@
 .tab-content {
+	border: 2px solid #fff $border-dark $border-dark;
 	background: silver;
-	border: solid;
-	border-width: 2px;
-	border-bottom-color: $border-dark;
-	border-right-color: $border-dark;
-	border-left-color: #fff;
-	border-top-color: silver;
 	padding: 1rem 1.4rem;
 }
 
@@ -40,11 +35,12 @@
 	border-left: 1px solid #5a5a5a;
 }
 
-.nav-tabs .nav-item:first-child {
+.nav-tabs .nav-item:first-child .nav-link.active {
 	border-left: 2px solid white;
 }
 
-.nav-tabs .nav-item .nav-link.active:after {
+.nav-tabs .nav-item .nav-link.active::after {
+	// Changed to double colon
 	content: "";
 	display: block;
 	width: 100%;
@@ -57,5 +53,5 @@
 
 .nav-tabs .nav-link {
 	border: 0;
-	padding: 1rem 1rem;
+	padding: 1rem; // Simplified padding
 }

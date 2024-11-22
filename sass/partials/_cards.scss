@@ -1,35 +1,30 @@
 .card {
-	border: solid;
-	border-width: 2px;
-	border-bottom-color: $border-dark;
-	border-right-color: $border-dark;
-	border-left-color: #fff;
-	border-top-color: #fff;
+	border: 2px solid;
+	border-color: #fff $border-dark $border-dark #fff;
 	background: $btn-bg;
 	color: #212529;
 }
 
 .card.square {
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 .card.square .card-header {
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 .card.w95 .card-header {
-	background: #08216b; 
+	background: #08216b;
 }
 
 .card-header {
-	background: -webkit-linear-gradient(left, #08216b, #a5cef7);
+	background: linear-gradient(to right, #08216b, #a5cef7);
 	color: #fff;
 	display: block;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	padding-top: 2px;
-	padding-bottom: 1px;
+	padding: 2px 0 1px;
 	text-align: left;
 }
 

@@ -1,40 +1,17 @@
+// Media queries and button styling
 // _buttons.scss
 
+@use "variables" as vars;
+
+@include button-styles(vars.$btn-bg, vars.$btn-text-color);
+
 .btn {
-	border-width: 2px;
-	border-style: outset;
-	border-color: buttonface;
-	border-right-color: $border-dark;
-	border-bottom-color: $border-dark;
-	background: $btn-bg;
-	color: black;
-	padding: 0 0 4px;
-	border-radius: 1px;
-	box-shadow: 1px 1px #000;
-	transition: background-color 0.3s ease;
+	@include button-styles(vars.$btn-bg, vars.$btn-text-color);
+	background: url("icons/button-background.png");
 
 	&:hover {
-		border: 2px inset #fff;
-		background: $btn-hover-bg;
-		color: $border-dark;
-		box-shadow: -1px -1px #000;
-	}
-
-	&:focus {
-		border: 2px inset #fff !important;
-		background: $btn-hover-bg;
-		color: $border-dark;
-		box-shadow: -1px -1px #000 !important;
-		outline: 0 !important;
-		background: url(background.bmp);
-	}
-
-	&:active {
-		border: 2px inset #fff !important;
-		color: $border-dark;
-		box-shadow: -1px -1px #000 !important;
-		outline: 0 !important;
-		background: url(background.bmp);
+		background: url("icons/button-hover.png");
+		// Other hover styles
 	}
 }
 

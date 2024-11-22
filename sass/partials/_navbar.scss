@@ -29,7 +29,6 @@
 	background: silver;
 	border: 1.8px outset #fff;
 	border-radius: 0;
-	-webkit-box-shadow: 1.5px 1.5px #000;
 	box-shadow: 1.5px 1.5px #000;
 }
 
@@ -43,12 +42,12 @@
 
 .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
 	width: 32px;
-	background: url(icons/directory_closed_cool-5.png);
+	background: url("icons/directory_closed_cool-5.png"); // Added quotes
 }
 
 .navbar-light .navbar-toggler .navbar-toggler-icon {
 	width: 32px;
-	background: url(icons/directory_open_cool-5.png);
+	background: url("icons/directory_open_cool-5.png"); // Added quotes
 }
 
 .navbar-toggler {

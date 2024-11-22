@@ -1,21 +1,33 @@
 {
-  "name": "gracie-portfolio",
-  "version": "1.0.0",
-  "description": "<p align=\"center\">     <a href=\"https://alexbsoft.github.io/win95.css/\">         <img src=\"https://i.imgur.com/kbXAcTA.png\">     </a> </p>",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass sass/styles.scss css/style.css --no-source-map",
-    "sass:watch": "sass --watch sass/styles.scss:css/style.css --no-source-map",
-    "sass:minify": "sass sass/styles.scss css/style.min.css --style=compressed",
-    "build:css": "sass sass/styles.scss css/style.min.css --style=compressed",
-    "watch:css": "sass --watch sass/styles.scss:css/style.min.css --style=compressed",
-    "compile:css": "sass sass/styles.scss css/style.css"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.54.9"
-  }
+	"name": "gracie-portfolio",
+	"version": "1.0.0",
+	"description": "<p align=\"center\">     <a href=\"https://alexbsoft.github.io/win95.css/\">         <img src=\"https://i.imgur.com/kbXAcTA.png\">     </a> </p>",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass sass/styles.scss css/style.css --no-source-map",
+		"sass:watch": "sass --watch sass/styles.scss:css/style.css --no-source-map",
+		"sass:minify": "sass sass/styles.scss css/style.min.css --style=compressed",
+		"build:css": "sass sass/styles.scss css/style.css --no-source-map && postcss css/style.css -o css/style.prefixed.css",
+		"watch:css": "sass --watch sass/styles.scss:css/style.css --no-source-map & postcss --watch css/style.css -o css/style.prefixed.css",
+		"compile:css": "sass sass/styles.scss css/style.css",
+		"lint:css": "stylelint 'sass/**/*.scss'"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.54.9",
+		"stylelint": "^16.10.0",
+		"stylelint-scss": "^6.10.0",
+		"stylelint-config-standard": "^29.0.0",
+		"autoprefixer": "^10.4.19",
+		"postcss": "^8.4.0",
+		"postcss-cli": "^9.0.1"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"> 1%",
+		"IE 10"
+	]
 }
