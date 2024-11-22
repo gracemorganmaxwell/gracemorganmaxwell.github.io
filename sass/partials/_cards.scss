@@ -1,8 +1,10 @@
+@use 'variables' as vars;
+
 .card {
 	border: 2px solid;
-	border-color: #fff $border-dark $border-dark #fff;
-	background: $btn-bg;
-	color: #212529;
+	border-color: #fff vars.$border-dark vars.$border-dark #fff;
+	background: vars.$btn-bg;
+	color: vars.$text-color;
 }
 
 .card.square {

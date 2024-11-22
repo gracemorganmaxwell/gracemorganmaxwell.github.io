@@ -1,11 +1,11 @@
 /* Error: Undefined variable.
  *   ,
- * 3 |     border-color: #fff $border-dark $border-dark #fff;
- *   |                        ^^^^^^^^^^^^
+ * 4 |     border-bottom: 2px solid $border-dark;
+ *   |                              ^^^^^^^^^^^^
  *   '
- *   sass/partials/_cards.scss 3:21  @forward
- *   sass/partials/_index.scss 7:1   @use
- *   sass/styles.scss 2:1            root stylesheet */
+ *   sass/partials/_modals.scss 4:27  @forward
+ *   sass/partials/_index.scss 8:1    @use
+ *   sass/styles.scss 2:1             root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      border-color: #fff $border-dark $border-dark #fff;\a   \2502                         ^^^^^^^^^^^^\a   \2575 \a   sass/partials/_cards.scss 3:21  @forward\a   sass/partials/_index.scss 7:1   @use\a   sass/styles.scss 2:1            root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      border-bottom: 2px solid $border-dark;\a   \2502                               ^^^^^^^^^^^^\a   \2575 \a   sass/partials/_modals.scss 4:27  @forward\a   sass/partials/_index.scss 8:1    @use\a   sass/styles.scss 2:1             root stylesheet";
 }

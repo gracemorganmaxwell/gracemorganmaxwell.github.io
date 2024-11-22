@@ -1,14 +1,18 @@
 // sass/styles.scss
-@use 'partials' as p;
+@use 'partials/index' as *;
 
 body {
-	font-family: p.$font-family;
-	background-color: p.$bg-color;
-	color: p.$text-color;
+	font-family: index.$font-family;
+	background-color: index.$bg-color;
+	color: index.$text-color;
 }
 
 .button-secondary {
-	@include p.button-styles(#6c757d, #ffffff); // Example secondary button
+	@include index.button-styles(#6c757d, #ffffff); 
+}
+
+.container {
+	@include button-styles();
 }
 
 

@@ -4,8 +4,8 @@
 @use "variables" as vars;
 
 @mixin button-styles($background, $textColor) {
-	background-color: $background;
-	color: $textColor;
+	background-color: vars.$background;
+	color: vars.$textColor;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
@@ -13,7 +13,7 @@
 	transition: background-color 0.3s ease;
 
 	&:hover {
-		background-color: darken($background, 10%);
+		background-color: darken(vars.$background, 10%);
 	}
 }
 
@@ -42,7 +42,7 @@
 // Flex Center Mixin
 @mixin flex-center($direction: row, $justify: center, $align: center) {
 	display: flex;
-	flex-direction: $direction;
-	justify-content: $justify;
-	align-items: $align;
+	flex-direction: vars.$direction;
+	justify-content: vars.$justify;
+	align-items: vars.$align;
 }

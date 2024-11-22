@@ -1,17 +1,17 @@
-@use 'variables' as vars;
+@use 'variables' as var;
 @use 'mixins' as m;
 
 .navbar-95 {
-	background: vars.$navbar-gradient;
+	background: var.$navbar-gradient;
 	margin: 0;
-	border: 1px outset vars.$footer-text;
+	border: 1px outset var.$footer-text;
 	min-height: 40px;
 	padding: 0 6px;
-	color: vars.$text-color;
+	color: var.$text-color;
 }
 
 .navbar-brand {
-	color: vars.$text-color;
+	color: var.$text-color;
 	padding: 0 6px;
 }
 
@@ -19,7 +19,7 @@
 	text-decoration: none;
 	display: inline-block;
 	padding: 0 9px;
-	color: vars.$text-color;
+	color: var.$text-color;
 }
 
 .dropdown-menu {
