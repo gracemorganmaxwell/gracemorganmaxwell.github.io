@@ -2,28 +2,69 @@
 @use 'mixins' as m;
 
 .taskbar {
-	@include m.flex-center();
-	background-color: vars.$taskbar-bg;
-	color: vars.$taskbar-color;
+    @include m.flex-center(row, flex-start, center);
+    background-color: vars.$taskbar-bg; // typically silver
+    color: vars.$taskbar-color; // typically #212529
+    padding: 0 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000; // Ensure the taskbar stays on top
 }
 
 .start-button {
-	display: flex;
-	align-items: center;
-	background-color: #c0c0c0;
-	border: 1px outset #fff;
-	padding: 5px 10px;
-	margin-right: 10px;
-	box-shadow: 1px 1px #000;
-	cursor: pointer;
-	font-size: 14px;
+    @include m.flex-center();
+    background-color: #c0c0c0;
+    border: 1px outset #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    box-shadow: 1px 1px #000;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 
-	&:hover {
-		background-color: #a5cef7;
-	}
+    &:hover {
+        background-color: #a5cef7;
+    }
 }
 
-.taskbar .time {
-	margin-left: auto;
-	font-size: 14px;
+.taskbar-icons {
+    @include m.flex-center(row, flex-start, center);
+    flex-grow: 1; // Allows icons to take up available space
+    overflow-x: auto; // Enable horizontal scrolling if icons exceed width
+}
+
+.taskbar-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    span {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &:hover {
+        background-color: #e0e0e0;
+        border-radius: 4px;
+    }
+}
+
+.time {
+    margin-left: auto;
+    font-size: 14px;
 }

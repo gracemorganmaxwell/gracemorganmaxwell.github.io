@@ -187,4 +187,80 @@ document.addEventListener("DOMContentLoaded", () => {
 			contactForm.classList.add('was-validated');
 		}
 	});
+
+	/**
+	 * Adds a window icon to the taskbar.
+	 * @param {string} windowId - The ID of the window.
+	 * @param {string} iconSrc - The source path of the icon image.
+	 * @param {string} title - The title of the window.
+	 */
+	function addTaskbarIcon(windowId, iconSrc, title) {
+		const taskbarIconsContainer = document.getElementById('taskbar-icons');
+		const existingIcon = taskbarIconsContainer.querySelector(`[data-window="${windowId}"]`);
+		
+		// Prevent duplicate icons
+		if (existingIcon) return;
+		
+		const iconElement = document.createElement('div');
+		iconElement.classList.add('taskbar-icon');
+		iconElement.dataset.window = windowId;
+		
+		const img = document.createElement('img');
+		img.src = iconSrc;
+		img.alt = `${title} Icon`;
+		
+		const span = document.createElement('span');
+		span.textContent = title;
+		
+		iconElement.appendChild(img);
+		iconElement.appendChild(span);
+		
+		// Add click event to focus or toggle the window
+		iconElement.addEventListener('click', () => {
+			const windowElement = document.getElementById(windowId);
+			if (windowElement.style.display === 'none') {
+				windowElement.style.display = 'block';
+				bringToFront(windowElement);
+			} else {
+				windowElement.style.display = 'none';
+			}
+		});
+		
+		taskbarIconsContainer.appendChild(iconElement);
+	}
+
+	/**
+	 * Removes a window icon from the taskbar.
+	 * @param {string} windowId - The ID of the window.
+	 */
+	function removeTaskbarIcon(windowId) {
+		const taskbarIconsContainer = document.getElementById('taskbar-icons');
+		const iconElement = taskbarIconsContainer.querySelector(`[data-window="${windowId}"]`);
+		if (iconElement) {
+			taskbarIconsContainer.removeChild(iconElement);
+		}
+	}
+
+	// Example: Add taskbar icon when a window is opened
+	// You can call this function whenever a new window is created
+	function openWindow(windowId, iconSrc, title) {
+		const windowElement = document.getElementById(windowId);
+		if (windowElement) {
+			windowElement.style.display = 'block';
+			bringToFront(windowElement);
+			addTaskbarIcon(windowId, iconSrc, title);
+		}
+	}
+
+	// Example: Remove taskbar icon when a window is closed
+	function closeWindow(windowId) {
+		const windowElement = document.getElementById(windowId);
+		if (windowElement) {
+			windowElement.style.display = 'none';
+			removeTaskbarIcon(windowId);
+		}
+	}
+
+	// Existing code for window dragging, minimizing, closing, etc.
+	// Ensure to call addTaskbarIcon and removeTaskbarIcon appropriately within these functions
 });

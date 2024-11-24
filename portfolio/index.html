@@ -25,7 +25,7 @@
 		<!-- Start Menu -->
 		<div class="start-menu" id="start-menu">
 			<div class="start-menu-item" data-window="projects-window">Projects</div>
-			<div class="start-menu-item" data-window="journal-window">Reflective Learning Journal</div>
+			<div class="start-menu-item" data-window="journal-window">Journal</div>
 			<div class="start-menu-item" data-window="contact-window">Contact</div>
 			<div class="start-menu-item" data-window="about-window">About Me</div>
 		</div>
@@ -33,19 +33,19 @@
 		<!-- Desktop Icons -->
 		<div class="desktop-icons">
 			<div class="desktop-icon" data-window="projects-window">
-				<img src="../assets/icons/project-icon.png" alt="Projects Icon" />
+				<img src="../assets/icons/filepack-1.png" alt="Projects Icon" />
 				<span>Projects</span>
 			</div>
 			<div class="desktop-icon" data-window="journal-window">
-				<img src="../assets/icons/journal-icon.png" alt="Journal Icon" />
+				<img src="../assets/icons/notepad-5.png" alt="Journal Icon" />
 				<span>Reflective Learning Journal</span>
 			</div>
 			<div class="desktop-icon" data-window="contact-window">
-				<img src="../assets/icons/contact-icon.png" alt="Contact Icon" />
+				<img src="../assets/icons/envelope_open_sheet-0.png" alt="Contact Icon" />
 				<span>Contact</span>
 			</div>
 			<div class="desktop-icon" data-window="about-window">
-				<img src="../assets/icons/about-icon.png" alt="About Me Icon" />
+				<img src="../assets/icons/newspaper.png" alt="About Me Icon" />
 				<span>About Me</span>
 			</div>
 		</div>
@@ -53,9 +53,22 @@
 		<!-- Taskbar -->
 		<footer class="taskbar">
 			<button class="start-button" id="start-button">
-				<img src="../assets/icons/start-icon.png" alt="Start Icon" class="icon-16 me-2" />
+				<img src="../assets/icons/windows-5.png" alt="Start Icon" class="icon-16 me-2" />
 				Start
 			</button>
+			
+			<!-- Container for Open Window Icons -->
+			<div class="taskbar-icons" id="taskbar-icons">
+				<!-- Example Open Window Icon -->
+				<!-- These will be dynamically added via JavaScript when windows are opened -->
+				<!--
+				<div class="taskbar-icon" data-window="projects-window">
+					<img src="../assets/icons/filepack-1.png" alt="Projects Icon" />
+					<span>Projects</span>
+				</div>
+				-->
+			</div>
+			
 			<div class="time" id="taskbar-time">12:00 PM</div>
 		</footer>
 
@@ -63,7 +76,6 @@
 		<div class="win95-window card w95" id="projects-window">
 			<div class="window-title-bar card-header">
 				<span class="window-title">
-					<img src="../assets/icons/project-icon.png" alt="Project Icon" class="window-icon icon-16" />
 					Projects
 				</span>
 				<div class="window-controls">
@@ -82,7 +94,7 @@
 		<div class="win95-window card w95" id="journal-window">
 			<div class="window-title-bar card-header">
 				<span class="window-title">
-					<img src="../assets/icons/journal-icon.png" alt="Journal Icon" class="window-icon icon-16" />
+			
 					Reflective Learning Journal
 				</span>
 				<div class="window-controls">
@@ -101,7 +113,7 @@
 		<div class="win95-window card w95" id="contact-window">
 			<div class="window-title-bar card-header">
 				<span class="window-title">
-					<img src="../assets/icons/contact-icon.png" alt="Contact Icon" class="window-icon icon-16" />
+					
 					Contact
 				</span>
 				<div class="window-controls">
@@ -159,7 +171,7 @@
 		<div class="win95-window card w95" id="about-window">
 			<div class="window-title-bar card-header">
 				<span class="window-title">
-					<img src="../assets/icons/about-icon.png" alt="About Icon" class="window-icon icon-16" />
+					
 					About Me
 				</span>
 				<div class="window-controls">

@@ -226,14 +226,23 @@ button:focus {
 .taskbar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: silver;
   color: #212529;
+  padding: 0 10px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;
 }
 
 .start-button {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   background-color: #c0c0c0;
   border: 1px outset #fff;
@@ -242,12 +251,47 @@ button:focus {
   box-shadow: 1px 1px #000;
   cursor: pointer;
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 .start-button:hover {
   background-color: #a5cef7;
 }
 
-.taskbar .time {
+.taskbar-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  overflow-x: auto;
+}
+
+.taskbar-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.taskbar-icon img {
+  width: 100%;
+  height: auto;
+}
+.taskbar-icon span {
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.taskbar-icon:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.time {
   margin-left: auto;
   font-size: 14px;
 }
